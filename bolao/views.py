@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Jogo, Aposta
+#from .forms import PostForm
 
 # Create your views here.
 
