@@ -8,15 +8,16 @@
 		<p>&nbsp;</p>
 		<p style="text-align: center;">SUAS APOSTAS SEMANA <strong>1</strong></p>
 		<p style="text-align: center;">&nbsp;</p>
-		<p style="text-align: center;">&nbsp;22/01 16:00 Time 1 x Time 3</p>
-		<p style="text-align: center;">&nbsp;22/01 16:00 Time 1 x Time 3</p>
-		<p style="text-align: center;">&nbsp;22/01 16:00 Time 1 x Time 3</p>
-		<p style="text-align: center;">&nbsp;22/01 16:00 Time 1 x Time 3</p>
-		<p style="text-align: center;">&nbsp;22/01 16:00 Time 1 x Time 3</p>
-		<p style="text-align: center;">&nbsp;22/01 16:00 Time 1 x Time 3</p>
-		<p style="text-align: center;">&nbsp;22/01 16:00 Time 1 x Time 3</p>
+
+		{% for jogo in jogos %}
+			<p style="text-align: center;">{{ jogo.data_hora }} {{ jogo.time1 }} APOSTA APOSTA {{ jogo.time2 }}</p>
+		{% endfor %}
+
 		<p style="text-align: center;">&nbsp;</p>
 		<p style="text-align: center;">SALVAR</p>
 		<p><strong>&nbsp;</strong></p>
+
+
+
     </body>
 </html>
